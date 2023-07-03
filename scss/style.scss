@@ -526,11 +526,17 @@ body {
 		font-weight: 600;
 		line-height: 1.2;
 	}
-	&__img {
-		width: 288px;
-		height: 283px;
-		margin: 0 auto;
+	&__container-text {
+		padding: 0 16px;
 	}
+	&__img {
+		// width: 288px;
+		// height: 283px;
+		margin: 0 auto;
+		object-fit: cover;
+		object-position: center;
+	}
+
 	&__company {
 		margin-top: 32px;
 		color: #ffffff;
@@ -560,25 +566,23 @@ body {
 	padding-top: 64px;
 	padding-bottom: 32px;
 	&__img {
-		margin: auto;
-		background-repeat: no-repeat;
+		// margin: auto;
 
-		height: 314px;
 		overflow: hidden;
 		border-top-left-radius: 20px;
 		border-top-right-radius: 20px;
 		margin-bottom: 24px;
 	}
-	&__img-g {
-		background: url("../images/georgina.jpg");
-		width: 100%;
-		height: 100%;
-	}
-	&__img-n {
-		background: url("../images/noah.jpg");
-		width: 100%;
-		height: 100%;
-	}
+	// &__img-g {
+	// 	background: url("../images/georgina.jpg");
+	// 	width: 100%;
+	// 	height: 100%;
+	// }
+	// &__img-n {
+	// 	background: url("../images/noah.jpg");
+	// 	width: 100%;
+	// 	height: 100%;
+	// }
 	&__list {
 		display: flex;
 		flex-direction: column;
@@ -721,6 +725,9 @@ body {
 		height: 45px;
 		background: linear-gradient(to bottom right, #fff 0%, #fff 50%, #f5f0e2 50%, #f5f0e2 100%);
 	}
+	&__subtitle {
+		padding-top: 32px;
+	}
 	&__subtile-text {
 		width: 343px;
 		margin-bottom: 32px;
@@ -769,6 +776,7 @@ body {
 	}
 	&__list {
 		display: flex;
+		gap: 16px;
 		// justify-content: center;
 		// align-items: center;
 		// gap: 16px;
@@ -818,6 +826,9 @@ body {
 		// width: 278px !important;
 		// margin-right: 0 !important;
 	}
+}
+.swiper-slide {
+	width: unset;
 }
 .container {
 }
@@ -980,26 +991,29 @@ body {
 	}
 
 	&__img {
+		object-fit: cover;
+		object-position: center;
 		border-top-left-radius: 16px;
 		border-top-right-radius: 16px;
 		margin: auto;
-		background-repeat: no-repeat;
-		height: 200px;
+
+		// background-repeat: no-repeat;
+		// height: 200px;
 		overflow: hidden;
 	}
 
-	&__img-n {
-		background: url("../images/results1.jpg");
-		background-size: cover;
-		width: 100%;
-		height: 100%;
-	}
-	&__img-g {
-		background: url("../images/results2.jpg");
-		background-size: cover;
-		width: 100%;
-		height: 100%;
-	}
+	// &__img-n {
+	// 	background: url("../images/results1.jpg");
+	// 	background-size: cover;
+	// 	width: 100%;
+	// 	height: 100%;
+	// }
+	// &__img-g {
+	// 	background: url("../images/results2.jpg");
+	// 	background-size: cover;
+	// 	width: 100%;
+	// 	height: 100%;
+	// }
 
 	&__list-svg {
 		display: flex;
@@ -1092,47 +1106,47 @@ body {
 		font-size: 20px;
 		font-weight: 600;
 		line-height: 1.2;
-		width: 100%;
+		// width: 100%;
 	}
 	&__link {
 		display: inline-block;
 	}
 
 	&__item-louis {
-		background: url(../images/prizes/prizes1.png);
+		background: url(../images/prizes/prizes1.webp);
 		background-repeat: no-repeat;
 	}
 	&__item-playstation {
-		background: url(../images/prizes/prizes2.png);
+		background: url(../images/prizes/prizes2.webp);
 		background-repeat: no-repeat;
 	}
 	&__item-macbook {
-		background: url(../images/prizes/prizes3.png);
+		background: url(../images/prizes/prizes3.webp);
 		background-repeat: no-repeat;
 	}
 
 	&__item-iphone {
-		background: url(../images/prizes/prizes4.png);
+		background: url(../images/prizes/prizes4.webp);
 		background-repeat: no-repeat;
 	}
 
 	&__item-vr {
-		background: url(../images/prizes/prizes5.png);
+		background: url(../images/prizes/prizes5.webp);
 		background-repeat: no-repeat;
 	}
 
 	&__item-ipad {
-		background: url(../images/prizes/prizes6.png);
+		background: url(../images/prizes/prizes6.webp);
 		background-repeat: no-repeat;
 	}
 
 	&__item-xbox {
-		background: url(../images/prizes/prizes7.png);
+		background: url(../images/prizes/prizes7.webp);
 		background-repeat: no-repeat;
 	}
 
 	&__item-gucci {
-		background: url(../images/prizes/prizes8.png);
+		background: url(../images/prizes/prizes8.webp);
 		background-repeat: no-repeat;
 	}
 
@@ -1158,15 +1172,19 @@ body {
 		margin-bottom: 32px;
 	}
 	&__img {
-		position: absolute;
-		height: 320px;
+		// position: absolute;
+		// top: 0;
+		// left: 0;
+		// top: 0;
+		// height: 320px;
 		z-index: -1;
 	}
 	&__list-item {
+		border-radius: 8px;
 		margin: 0 auto;
-		width: 320px;
+		// width: 320px;
 		// flex-basis: calc((100% - 16px) / 2);
-		height: 320px;
+		// height: 320px;
 		position: relative;
 		color: #ffffff;
 	}
@@ -1174,9 +1192,11 @@ body {
 		background: linear-gradient(0deg, rgba(2, 0, 36, 1) 3%, rgba(2, 0, 36, 0.15436025073746318) 100%);
 	}
 	&__item-container {
+		position: absolute;
+		bottom: 0;
+		left: 0;
 		padding: 0 24px;
-		position: relative;
-		top: 128.56px;
+		z-index: 2;
 	}
 	&__list-item-big {
 		top: 104.56px;
@@ -1219,7 +1239,7 @@ body {
 		background: linear-gradient(to bottom right, #f6f9fc 0%, #f6f9fc 50%, #ffffff 50%, #ffffff 100%);
 	}
 	&__list-item-third {
-		height: 281px;
+		// height: 281px;
 	}
 	&__accent {
 		position: absolute;
@@ -1227,7 +1247,7 @@ body {
 		left: -8px;
 	}
 	&__list-item-none {
-		display: none;
+		// display: none;
 	}
 }
 .slider-list {
@@ -1410,14 +1430,17 @@ body {
 
 /*----------------------------------------------------*/
 @media (max-width: 374px) {
-	.campaigns__img {
-		width: 290px;
-	}
+	// .campaigns__img {
+	// 	width: 290px;
+	// }
 	.campaigns__item {
 		max-width: 286px;
 	}
 	.feedback__list-item {
-		max-width: 288px;
+		// max-width: 288px;
+	}
+	.footer__logo {
+		padding-bottom: 32px;
 	}
 }
 // @media (min-width: 475px) {
@@ -1441,7 +1464,7 @@ body {
 		min-width: 327px;
 		display: flex;
 		flex-direction: row;
-		gap: 30px;
+		justify-content: space-between;
 	}
 	.hero {
 		// position: relative;
@@ -1452,8 +1475,8 @@ body {
 	}
 	.hero__img {
 		margin-left: 0px;
-		width: 476px;
-		height: 468px;
+		// width: 476px;
+		// height: 468px;
 
 		// position: absolute;
 		// height: 468px;
@@ -1481,12 +1504,10 @@ body {
 		width: 335px;
 		margin: 0;
 	}
-	.campaigns__img {
-		width: 100%;
-	}
+	// .campaigns__img {
+	// 	width: 100%;
+	// }
 	.about__img {
-		width: 572px;
-		height: 575px;
 	}
 	.celebrities__container {
 		max-width: 686px;
@@ -1506,12 +1527,12 @@ body {
 	}
 	.results__list {
 		align-items: center;
-		max-width: 686px;
+		// max-width: 686px;
 
 		margin: 0 auto;
 	}
 	.results__list-item {
-		margin-right: 0 !important;
+		// margin-right: 0 !important;
 		width: 335px;
 	}
 	.prizes__list-none {
@@ -1535,11 +1556,11 @@ body {
 		display: flex;
 	}
 	.prizes__item-louis {
-		background: url(../images/prizes/prizes1-tablet.png);
+		background: url(../images/prizes/prizes1-tablet.webp);
 		max-width: 335px;
 	}
 	.prizes__item-playstation {
-		background: url(../images/prizes/prizes2-tablet.png);
+		background: url(../images/prizes/prizes2-tablet.webp);
 		max-width: 335px;
 	}
 	.prizes__item-macbook {
@@ -1558,29 +1579,30 @@ body {
 	}
 	.feedback__list {
 	}
-	.feedback__list-item-none {
-		display: block;
-	}
-	.feedback__first-none {
-		display: none;
-	}
+	// .feedback__list-item-none {
+	// 	display: block;
+	// }
+	// .feedback__first-none {
+	// 	display: none;
+	// }
 	.feedback__list-item {
 		border-radius: 8px;
 		overflow: hidden;
 
-		width: 335px;
-		height: 248px;
+		// width: 335px;
+		// height: 248px;
 	}
 	.feedback__list-item-big {
 		top: 32.88px;
 	}
 	.feedback__item-container-first {
-		top: 400px;
+		bottom: 0;
+		left: 0;
 	}
 	.feedback__item-container {
 	}
 	.feedback__list-item-third {
-		height: 329px;
+		// height: 329px;
 	}
 	.feedback__box-third {
 		padding: 24px;
@@ -1591,9 +1613,9 @@ body {
 		left: 13px;
 	}
 	.feedback__img {
-		position: absolute;
-		top: 0;
-		left: 0;
+		// position: absolute;
+		// top: 0;
+		// left: 0;
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
@@ -1638,12 +1660,7 @@ body {
 }
 @media (max-width: 749px) {
 	.prizes__list-item {
-		width: 260px !important;
-	}
-}
-@media (min-width: 1069px) {
-	.feedback__item-container-first {
-		top: 160px;
+		// width: 260px !important;
 	}
 }
 @media (max-width: 1191px) {
@@ -1763,11 +1780,7 @@ body {
 		align-items: center;
 	}
 	.hero__img {
-		// position: absolute;
-		// top: -128px;
-		// left: 368px;
-		width: 733px;
-		height: 591px;
+		margin-top: -100px;
 	}
 	.hero__company {
 		margin-top: 0;
@@ -1790,31 +1803,37 @@ body {
 		max-width: 572px;
 		width: unset;
 	}
-	.campaigns__img {
-		margin: auto;
-		background-repeat: no-repeat;
-		width: 100%;
-		height: 320px;
-		overflow: hidden;
-		border-top-left-radius: 20px;
-		border-top-right-radius: 20px;
-		margin-bottom: 24px;
-	}
-	.campaigns__img-g {
-		background: url("../images/georgina-desktop.jpg");
-		width: 100%;
-		height: 100%;
-	}
-	.campaigns__img-n {
-		background: url("../images/noah-desktop.jpg");
-		width: 100%;
-		height: 100%;
-	}
+	// .campaigns__img {
+	// 	margin: auto;
+	// 	background-repeat: no-repeat;
+	// 	width: 100%;
+	// 	height: 320px;
+	// 	overflow: hidden;
+	// 	border-top-left-radius: 20px;
+	// 	border-top-right-radius: 20px;
+	// 	margin-bottom: 24px;
+	// }
+	// .campaigns__img-g {
+	// 	background: url("../images/georgina-desktop.jpg");
+	// 	width: 100%;
+	// 	height: 100%;
+	// }
+	// .campaigns__img-n {
+	// 	background: url("../images/noah-desktop.jpg");
+	// 	width: 100%;
+	// 	height: 100%;
+	// }
 	.subtitle {
 		font-size: 48px;
 	}
 	.subtitle-text {
 		font-size: 25px;
+	}
+	.about__subtitle {
+		padding-top: 115.5px;
+	}
+	.about__subtile-text {
+		margin-bottom: 64px;
 	}
 	.about__triangle-top {
 		height: 120px;
@@ -1835,13 +1854,13 @@ body {
 		gap: 32px;
 	}
 	.about__img {
-		flex-grow: 2;
+		max-width: 572px;
 	}
 	.about__list {
 		gap: 64px;
 	}
 	.celebrities__list-item {
-		width: 278px !important;
+		// width: 278px !important;
 	}
 	.swiper-button {
 		display: flex;
@@ -1902,11 +1921,11 @@ body {
 	.results__subtitle-text {
 		margin-bottom: unset;
 	}
-	.results__img-n {
-		overflow: hidden;
-	}
+	// .results__img-n {
+	// 	overflow: hidden;
+	// }
 	.results__img {
-		height: 350px;
+		// height: 350px;
 		border-top-left-radius: 27px;
 		border-top-right-radius: 27px;
 	}
@@ -1923,8 +1942,8 @@ body {
 		box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15), 0px 7px 15px 0px rgba(0, 0, 0, 0.15),
 			-2px 28px 28px 0px rgba(0, 0, 0, 0.13), -4px 63px 38px 0px rgba(0, 0, 0, 0.08),
 			-8px 111px 45px 0px rgba(0, 0, 0, 0.02), -12px 174px 49px 0px rgba(0, 0, 0, 0);
-		width: 572px !important;
-		max-width: 572px;
+		// width: 572px !important;
+		width: 572px;
 	}
 	.results__list-svg {
 		justify-content: center;
@@ -1944,12 +1963,12 @@ body {
 		border-radius: 20px;
 	}
 	.prizes__item-louis {
-		background: url(../images/prizes/prizes1.png);
+		background: url(../images/prizes/prizes1.webp);
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
 	.prizes__item-playstation {
-		background: url(../images/prizes/prizes2.png);
+		background: url(../images/prizes/prizes2.webp);
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
@@ -1958,37 +1977,37 @@ body {
 		border-radius: 20px;
 	}
 	.prizes__item-macbook {
-		background: url(../images/prizes/prizes3.png);
+		background: url(../images/prizes/prizes3.webp);
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
 
 	.prizes__item-iphone {
-		background: url(../images/prizes/prizes4.png);
+		background: url(../images/prizes/prizes4.webp);
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
 
 	.prizes__item-vr {
-		background: url(../images/prizes/prizes5.png);
+		background: url(../images/prizes/prizes5.webp);
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
 
 	.prizes__item-ipad {
-		background: url(../images/prizes/prizes6.png);
+		background: url(../images/prizes/prizes6.webp);
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
 
 	.prizes__item-xbox {
-		background: url(../images/prizes/prizes7.png);
+		background: url(../images/prizes/prizes7.webp);
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
 
 	.prizes__item-gucci {
-		background: url(../images/prizes/prizes8.png);
+		background: url(../images/prizes/prizes8.webp);
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
@@ -2001,20 +2020,18 @@ body {
 		grid-template-columns: repeat(auto-fit, minmax(572px, 1fr));
 	}
 	.feedback__list-item {
-		width: 572px;
+		// width: 572px;
 	}
 	.feedback__list-item-second {
-		height: 308px;
+		// height: 308px;
 	}
 	.feedback__list-item-none {
-		display: none;
+		// display: none;
 	}
-	.feedback__first-none {
-		display: block;
-	}
-	.feedback__item-container-first {
-		top: 482px;
-	}
+	// .feedback__first-none {
+	// 	display: block;
+	// }
+
 	.feedback__list-item-big {
 		top: 140px;
 	}
@@ -2096,56 +2113,56 @@ body {
 }
 
 @media (min-resolution: 192dpi) {
-	.results__img-n {
-		background: url("../images/results1@2.jpg");
-		background-size: cover;
-	}
-	.results__img-g {
-		background: url("../images/results2@2.jpg");
-		background-size: cover;
-	}
+	// .results__img-n {
+	// 	background: url("../images/results1@2.jpg");
+	// 	background-size: cover;
+	// }
+	// .results__img-g {
+	// 	background: url("../images/results2@2.jpg");
+	// 	background-size: cover;
+	// }
 	.prizes__item-louis {
-		background: url(../images/prizes/prizes1@2.png);
+		background: url(../images/prizes/prizes1@2.webp);
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
 	.prizes__item-playstation {
-		background: url(../images/prizes/prizes2@2.png);
+		background: url(../images/prizes/prizes2@2.webp);
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
 	.prizes__item-macbook {
-		background: url(../images/prizes/prizes3@2.png);
+		background: url(../images/prizes/prizes3@2.webp);
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
 
 	.prizes__item-iphone {
-		background: url(../images/prizes/prizes4@2.png);
+		background: url(../images/prizes/prizes4@2.webp);
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
 
 	.prizes__item-vr {
-		background: url(../images/prizes/prizes5@2.png);
+		background: url(../images/prizes/prizes5@2.webp);
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
 
 	.prizes__item-ipad {
-		background: url(../images/prizes/prizes6@2.png);
+		background: url(../images/prizes/prizes6@2.webp);
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
 
 	.prizes__item-xbox {
-		background: url(../images/prizes/prizes7@2.png);
+		background: url(../images/prizes/prizes7@2.webp);
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
 
 	.prizes__item-gucci {
-		background: url(../images/prizes/prizes8@2.png);
+		background: url(../images/prizes/prizes8@2.webp);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-size: contain;
@@ -2153,36 +2170,36 @@ body {
 }
 @media (min-resolution: 192dpi) and (min-width: 750px) and (max-width: 1191px) {
 	.prizes__item-louis {
-		background: url(../images/prizes/prizes1@2-tablet.png);
+		background: url(../images/prizes/prizes1@2-tablet.webp);
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
 	.prizes__item-playstation {
-		background: url(../images/prizes/prizes2@2-tablet.png);
+		background: url(../images/prizes/prizes2@2-tablet.webp);
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
 }
 
 @media (min-resolution: 192dpi) and (min-width: 1158px) {
-	.campaigns__img-g {
-		background: url("../images/georgina-desktop@2.jpg");
-		background-size: cover;
-	}
-	.campaigns__img-n {
-		background: url("../images/noah-desktop@2.jpg");
-		background-size: cover;
-	}
+	// .campaigns__img-g {
+	// 	background: url("../images/georgina-desktop@2.jpg");
+	// 	background-size: cover;
+	// }
+	// .campaigns__img-n {
+	// 	background: url("../images/noah-desktop@2.jpg");
+	// 	background-size: cover;
+	// }
 }
 @media (min-resolution: 192dpi) and (max-width: 1191px) {
-	.campaigns__img-g {
-		background: url("../images/georgina@2.jpg");
-		background-size: cover;
-	}
-	.campaigns__img-n {
-		background: url("../images/noah@2.jpg");
-		background-size: cover;
-	}
+	// .campaigns__img-g {
+	// 	background: url("../images/georgina@2.jpg");
+	// 	background-size: cover;
+	// }
+	// .campaigns__img-n {
+	// 	background: url("../images/noah@2.jpg");
+	// 	background-size: cover;
+	// }
 }
 
 // @media (min-resolution: 192dpi) and (min-width: 1192px) {

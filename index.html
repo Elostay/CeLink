@@ -23,7 +23,7 @@
 		<div class="header__container container">
 			<nav class="header__nav">
 				<a href="./index.html" class="logo">
-					<img src="./images/logo.png" alt="celebrity logo">
+					<img src="./images/logo.webp" alt="celebrity logo">
 				</a>
 				<ul class="header-menu__list ">
 					<li class="header-menu__item current-menu"><a href="./index.html" class="menu__link">Home</a></li>
@@ -49,24 +49,31 @@
 	</header>
 	<main class="main">
 		<section class="hero">
-			<div class="container">
-				<div class="hero__container">
-					<div>
-						<h1 class="hero__title">Grow <span>your Instagram</span>
-							<br> via <span>celebrity</span> campaigns
-						</h1>
-						<ul class="hero__benefits">
-							<li class="hero__benefits-item">Trusted</li>
-							<li class="hero__benefits-item">Rapid</li>
-							<li class="hero__benefits-item">Transparent</li>
-						</ul>
-						<p class="hero__text">Subscribe to our latest updates and <br>
-							company services</p>
-						<button type="button" class="hero__btn button">Register Interest</button>
-					</div>
-					<img class="hero__img " srcset="./images/hero.png 1x, ./images/hero@2.png 2x" src="./images/hero.png"
-						alt="graphics">
+			<div class="hero__container">
+				<div class="hero__container-text">
+					<h1 class="hero__title">Grow <span>your Instagram</span>
+						<br> via <span>celebrity</span> campaigns
+					</h1>
+					<ul class="hero__benefits">
+						<li class="hero__benefits-item">Trusted</li>
+						<li class="hero__benefits-item">Rapid</li>
+						<li class="hero__benefits-item">Transparent</li>
+					</ul>
+					<p class="hero__text">Subscribe to our latest updates and <br>
+						company services</p>
+					<button type="button" class="hero__btn button">Register Interest</button>
 				</div>
+				<picture>
+					<source srcset="./images/hero/hero-mb.webp 1x, ./images/hero/hero-mb@2.webp 2x"
+						media="(max-width:749px)">
+					<source srcset="./images/hero/hero-tb.webp 1x, ./images/hero/hero-tb@2.webp 2x"
+						media="(max-width:1191px)">
+					<source srcset="./images/hero/hero-dk.webp 1x, ./images/hero/hero-dk@2.webp 2x"
+						media="(min-width:1192px)">
+					<img class="hero__img " src="./images/hero/hero-mb.webp" alt="graphics">
+				</picture>
+			</div>
+			<div class="container">
 				<div class="hero__company-box">
 					<p class="hero__company">Feautered in</p>
 					<ul class="hero__list">
@@ -110,9 +117,15 @@
 				<p class="subtitle-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				<ul class="campaigns__list">
 					<li class="campaigns__item">
-						<div class="campaigns__img">
-							<div class="campaigns__img-g"></div>
-						</div>
+						<picture>
+							<source srcset="./images/campaigns/g-mb.webp 1x, ./images/campaigns/g-mb@2.webp 2x"
+								media="(max-width:749px)">
+							<source srcset="./images/campaigns/g-tb.webp 1x, ./images/campaigns/g-tb@2.webp 2x"
+								media="(max-width:1191px)">
+							<source srcset="./images/campaigns/g-dk.webp 1x, ./images/campaigns/g-dk@2.webp 2x"
+								media="(min-width:1192px)">
+							<img class="campaigns__img " src="./images/campaigns/g-mb.webp" alt="Georgina Rodriguez">
+						</picture>
 						<p class="campaigns__item-subtitle">Campaign</p>
 						<p class="campaigns__item-title">Georgina Rodriquez</p>
 						<p class="campaigns__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
@@ -180,7 +193,15 @@
 						<button type="button" class="campaigns__btn button">Enquire now</button>
 					</li>
 					<li class="campaigns__item">
-						<div class="campaigns__img"><img class="campaigns__img-n"></div>
+						<picture>
+							<source srcset="./images/campaigns/n-mb.webp 1x, ./images/campaigns/n-mb@2.webp 2x"
+								media="(max-width:749px)">
+							<source srcset="./images/campaigns/n-tb.webp 1x, ./images/campaigns/n-tb@2.webp 2x"
+								media="(max-width:1191px)">
+							<source srcset="./images/campaigns/n-dk.webp 1x, ./images/campaigns/n-dk@2.webp 2x"
+								media="(min-width:1192px)">
+							<img class="campaigns__img " src="./images/campaigns/n-mb.webp" alt="Noah Schnapps ">
+						</picture>
 						<p class="campaigns__item-subtitle">Campaign</p>
 						<p class="campaigns__item-title">Noah Schnapps</p>
 						<p class="campaigns__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
@@ -255,7 +276,7 @@
 			<div class="container">
 				<div class="about__container">
 					<div>
-						<h2 class="subtitle">About Celebrity link</h2>
+						<h2 class="subtitle about__subtitle">About Celebrity link</h2>
 						<p class="subtitle-text about__subtile-text">Lorem ipsum dolor sit amet, consectetu</p>
 						<p class="about__text">Then add text to the right with dummy sub title and then an image like this to
 							the
@@ -283,8 +304,15 @@
 							to the right
 							with dummy</p>
 					</div>
-					<img class="about__img" srcset="./images/about.png 1x, ./images/about@2.png 2x" src="./images/about.png"
-						alt="after campaign" width="320" height="345">
+					<picture>
+						<source srcset="./images/about/about-mb.webp 1x, ./images/about/about-mb@2.webp 2x"
+							media="(max-width:749px)">
+						<source srcset="./images/about/about-tb.webp 1x, ./images/about/about-tb@2.webp 2x"
+							media="(max-width:1191px)">
+						<source srcset="./images/about/about-dk.webp 1x, ./images/about/about-dk@2.webp 2x"
+							media="(min-width:1192px)">
+						<img class="about__img " src="./images/about/about-mb.webp" alt="Result after campaign">
+					</picture>
 				</div>
 				<p class="about__list-title">Who we work with</p>
 				<ul class="about__list">
@@ -335,8 +363,9 @@
 				<div class="celebrities-slider list-slider swiper-container">
 					<ul class="celebrities__list swiper-wrapper">
 						<li class="celebrities__list-item swiper-slide">
-							<img class="celebrities__img" srcset="./images/celebrity.jpg 1x, ./images/celebrity@2.jpg 2x"
-								src="./images/celebrity.jpg" alt="ian somerhalder" width="278" height="288">
+							<img class="celebrities__img"
+								srcset="./images/celebrities/celebrity.webp 1x, ./images/celebrities/celebrity@2.webp 2x"
+								src="./images/celebrities/celebrity.webp" alt="ian somerhalder" width="278" height="288">
 							<div class="celebrities__item-box">
 								<p class="celebrities__title">Ian Somerhalder</p>
 								<a class="celebrities__sm" href="#">@IanSomerhalder</a>
@@ -344,8 +373,9 @@
 							</div>
 						</li>
 						<li class="celebrities__list-item swiper-slide">
-							<img class="celebrities__img" srcset="./images/celebrity2.jpg 1x, ./images/celebrity2@2.jpg 2x"
-								src="./images/celebrity2.jpg" alt="Georgina Rodriguez" width="278" height="288">
+							<img class="celebrities__img"
+								srcset="./images/celebrities/celebrity2.webp 1x, ./images/celebrities/celebrity2@2.webp 2x"
+								src="./images/celebrities/celebrity2.webp" alt="Georgina Rodriguez" width="278" height="288">
 							<div class="celebrities__item-box">
 								<p class="celebrities__title">Georgina Rodriguez</p>
 								<a class="celebrities__sm" href="#">@IanSomerhalder</a>
@@ -353,8 +383,9 @@
 							</div>
 						</li>
 						<li class="celebrities__list-item swiper-slide">
-							<img class="celebrities__img" srcset="./images/celebrity3.jpg 1x, ./images/celebrity3@2.jpg 2x"
-								src="./images/celebrity3.jpg" alt="Noah Schnapp" width="278" height="288">
+							<img class="celebrities__img"
+								srcset="./images/celebrities/celebrity3.webp 1x, ./images/celebrities/celebrity3@2.webp 2x"
+								src="./images/celebrities/celebrity3.webp" alt="Noah Schnapp" width="278" height="288">
 							<div class="celebrities__item-box">
 								<p class="celebrities__title">Noah Schnapp</p>
 								<a class="celebrities__sm" href="#">@NoahSchnapp</a>
@@ -362,8 +393,9 @@
 							</div>
 						</li>
 						<li class="celebrities__list-item swiper-slide ">
-							<img class="celebrities__img" srcset="./images/celebrity4.jpg 1x, ./images/celebrity4@2.jpg 2x"
-								src="./images/celebrity4.jpg" alt="Iggy Azalea" width="278" height="288">
+							<img class="celebrities__img"
+								srcset="./images/celebrities/celebrity4.webp 1x, ./images/celebrities/celebrity4@2.webp 2x"
+								src="./images/celebrities/celebrity4.webp" alt="Iggy Azalea" width="278" height="288">
 							<div class="celebrities__item-box">
 								<p class="celebrities__title">Iggy Azalea</p>
 								<a class="celebrities__sm" href="#">@IanSomerhalder</a>
@@ -371,39 +403,13 @@
 							</div>
 						</li>
 						<li class="celebrities__list-item swiper-slide">
-							<img class="celebrities__img" srcset="./images/celebrity.jpg 1x, ./images/celebrity@2.jpg 2x"
-								src="./images/celebrity.jpg" alt="ian somerhalder" width="278" height="288">
+							<img class="celebrities__img"
+								srcset="./images/celebrities/celebrity.webp 1x, ./images/celebrities/celebrity@2.webp 2x"
+								src="./images/celebrities/celebrity.webp" alt="ian somerhalder" width="278" height="288">
 							<div class="celebrities__item-box">
 								<p class="celebrities__title">Ian Somerhalder</p>
 								<a class="celebrities__sm" href="#">@IanSomerhalder</a>
 								<p class="celebrities__follower">Followers: 23.6M</p>
-							</div>
-						</li>
-						<li class="celebrities__list-item swiper-slide">
-							<img class="celebrities__img" srcset="./images/celebrity2.jpg 1x, ./images/celebrity2@2.jpg 2x"
-								src="./images/celebrity2.jpg" alt="Georgina Rodriguez" width="278" height="288">
-							<div class="celebrities__item-box">
-								<p class="celebrities__title">Georgina Rodriguez</p>
-								<a class="celebrities__sm" href="#">@IanSomerhalder</a>
-								<p class="celebrities__follower">Followers: 39.4M</p>
-							</div>
-						</li>
-						<li class="celebrities__list-item swiper-slide">
-							<img class="celebrities__img" srcset="./images/celebrity3.jpg 1x, ./images/celebrity3@2.jpg 2x"
-								src="./images/celebrity3.jpg" alt="Noah Schnapp" width="278" height="288">
-							<div class="celebrities__item-box">
-								<p class="celebrities__title">Noah Schnapp</p>
-								<a class="celebrities__sm" href="#">@NoahSchnapp</a>
-								<p class="celebrities__follower">Followers: 27.4M</p>
-							</div>
-						</li>
-						<li class="celebrities__list-item swiper-slide ">
-							<img class="celebrities__img" srcset="./images/celebrity4.jpg 1x, ./images/celebrity4@2.jpg 2x"
-								src="./images/celebrity4.jpg" alt="Iggy Azalea" width="278" height="288">
-							<div class="celebrities__item-box">
-								<p class="celebrities__title">Iggy Azalea</p>
-								<a class="celebrities__sm" href="#">@IanSomerhalder</a>
-								<p class="celebrities__follower">Followers: 16.7M</p>
 							</div>
 						</li>
 					</ul>
@@ -578,15 +584,21 @@
 				<div class="results__list-slider list-slider results-slider swiper-container">
 					<ul class="results__list swiper-wrapper">
 						<li class="results__list-item swiper-slide">
-							<div class="results__img">
-								<div class="results__img-n"></div>
-							</div>
+							<picture>
+								<source srcset="./images/results/results-mb.webp 1x, ./images/results/results-mb@2.webp 2x"
+									media="(max-width:749px)">
+								<source srcset="./images/results/results-tb.webp 1x, ./images/results/results-tb@2.webp 2x"
+									media="(max-width:1191px)">
+								<source srcset="./images/results/results-dk.webp 1x, ./images/results/results-dk@2.webp 2x"
+									media="(min-width:1192px)">
+								<img class="results__img " src="./images/results/results-mb.webp" alt="Results">
+							</picture>
 							<ul class="results__list-svg">
-								<svg class="results__accent-top">
-									<use class="results__t" href="./images/svg.svg#grow_top"></use>
-								</svg>
-								<li class="results__item-svg">
 
+								<li class="results__item-svg">
+									<svg class="results__accent-top">
+										<use class="results__t" href="./images/svg.svg#grow_top"></use>
+									</svg>
 									<div class="results__border-wrap">
 										<div class="results__box-svg">
 											<svg width="24" height="24">
@@ -598,7 +610,9 @@
 										<p class="results__text-svg">GROWTH</p>
 										<p class="results__numbers-svg">15.5K</p>
 									</div>
-
+									<svg class="results__accent-bottom">
+										<use href="./images/svg.svg#grow_bottom"></use>
+									</svg>
 								</li>
 								<li class="results__item-svg">
 									<div class="results__border-wrap">
@@ -665,20 +679,24 @@
 										<p class="results__numbers-svg">6,735,525</p>
 									</div>
 								</li>
-								<svg class="results__accent-bottom">
-									<use href="./images/svg.svg#grow_bottom"></use>
-								</svg>
+
 							</ul>
 						</li>
 						<li class="results__list-item swiper-slide">
-							<div class="results__img">
-								<div class="results__img-g"></div>
-							</div>
+							<picture>
+								<source srcset="./images/results/results-mb.webp 1x, ./images/results/results-mb@2.webp 2x"
+									media="(max-width:749px)">
+								<source srcset="./images/results/results2-tb.webp 1x, ./images/results/results2-tb@2.webp 2x"
+									media="(max-width:1191px)">
+								<source srcset="./images/results/results2-dk.webp 1x, ./images/results/results2-dk@2.webp 2x"
+									media="(min-width:1192px)">
+								<img class="results__img " src="./images/results/results-mb.webp" alt="Results">
+							</picture>
 							<ul class="results__list-svg">
-								<svg class="results__accent-top">
-									<use class="results__t" href="./images/svg.svg#grow_top"></use>
-								</svg>
 								<li class="results__item-svg">
+									<svg class="results__accent-top">
+										<use class="results__t" href="./images/svg.svg#grow_top"></use>
+									</svg>
 									<div class="results__border-wrap">
 										<div class="results__box-svg">
 											<svg width="24" height="24">
@@ -690,6 +708,9 @@
 										<p class="results__text-svg">GROWTH</p>
 										<p class="results__numbers-svg">15.5K</p>
 									</div>
+									<svg class="results__accent-bottom">
+										<use href="./images/svg.svg#grow_bottom"></use>
+									</svg>
 								</li>
 								<li class="results__item-svg">
 									<div class="results__border-wrap">
@@ -756,113 +777,24 @@
 										<p class="results__numbers-svg">6,735,525</p>
 									</div>
 								</li>
-								<svg class="results__accent-bottom">
-									<use href="./images/svg.svg#grow_bottom"></use>
-								</svg>
 							</ul>
 						</li>
 						<li class="results__list-item swiper-slide">
-							<div class="results__img">
-								<div class="results__img-n"></div>
-							</div>
+							<picture>
+								<source srcset="./images/results/results-mb.webp 1x, ./images/results/results-mb@2.webp 2x"
+									media="(max-width:749px)">
+								<source srcset="./images/results/results-tb.webp 1x, ./images/results/results-tb@2.webp 2x"
+									media="(max-width:1191px)">
+								<source srcset="./images/results/results-dk.webp 1x, ./images/results/results-dk@2.webp 2x"
+									media="(min-width:1192px)">
+								<img class="results__img " src="./images/results/results-mb.webp" alt="Results">
+							</picture>
 							<ul class="results__list-svg">
-								<svg class="results__accent-top">
-									<use class="results__t" href="./images/svg.svg#grow_top"></use>
-								</svg>
-								<li class="results__item-svg">
 
-									<div class="results__border-wrap">
-										<div class="results__box-svg">
-											<svg width="24" height="24">
-												<use href="./images/svg.svg#campaigns_3"></use>
-											</svg>
-										</div>
-									</div>
-									<div class="result__box-text">
-										<p class="results__text-svg">GROWTH</p>
-										<p class="results__numbers-svg">15.5K</p>
-									</div>
-
-								</li>
 								<li class="results__item-svg">
-									<div class="results__border-wrap">
-										<div class="results__box-svg">
-											<svg width="24" height="24">
-												<use href="./images/svg.svg#results_1"></use>
-											</svg>
-										</div>
-									</div>
-									<div class="result__box-text">
-										<p class="results__text-svg">total likes</p>
-										<p class="results__numbers-svg">2,297,915</p>
-									</div>
-								</li>
-								<li class="results__item-svg">
-									<div class="results__border-wrap">
-										<div class="results__box-svg">
-											<svg width="24" height="24">
-												<use href="./images/svg.svg#campaigns_4"></use>
-											</svg>
-										</div>
-									</div>
-									<div class="result__box-text">
-										<p class="results__text-svg">Date</p>
-										<p class="results__numbers-svg">26.02.22</p>
-									</div>
-								</li>
-								<li class="results__item-svg">
-									<div class="results__border-wrap">
-										<div class="results__box-svg">
-											<svg width="24" height="24">
-												<use href="./images/svg.svg#results_2"></use>
-											</svg>
-										</div>
-									</div>
-									<div class="result__box-text">
-										<p class="results__text-svg">Reach</p>
-										<p class="results__numbers-svg">4,724,289</p>
-									</div>
-								</li>
-								<li class="results__item-svg">
-									<div class="results__border-wrap">
-										<div class="results__box-svg">
-											<svg width="24" height="24">
-												<use href="./images/svg.svg#results_3"></use>
-											</svg>
-										</div>
-									</div>
-									<div class="result__box-text">
-										<p class="results__text-svg">Total comments</p>
-										<p class="results__numbers-svg">211,827</p>
-									</div>
-								</li>
-								<li class="results__item-svg">
-									<div class="results__border-wrap">
-										<div class="results__box-svg">
-											<svg width="24" height="24">
-												<use href="./images/svg.svg#results_4"></use>
-											</svg>
-										</div>
-									</div>
-									<div class="result__box-text">
-										<p class="results__text-svg">impressions</p>
-										<p class="results__numbers-svg">6,735,525</p>
-									</div>
-								</li>
-								<svg class="results__accent-bottom">
-									<use href="./images/svg.svg#grow_bottom"></use>
-								</svg>
-							</ul>
-						</li>
-						<li class="results__list-item swiper-slide">
-							<div class="results__img">
-								<div class="results__img-g"></div>
-							</div>
-							<ul class="results__list-svg">
-								<svg class="results__accent-top">
-									<use class="results__t" href="./images/svg.svg#grow_top"></use>
-								</svg>
-								<li class="results__item-svg">
+									<svg class="results__accent-top">
+										<use class="results__t" href="./images/svg.svg#grow_top"></use>
+									</svg>
 									<div class="results__border-wrap">
 										<div class="results__box-svg">
 											<svg width="24" height="24">
@@ -874,6 +806,9 @@
 										<p class="results__text-svg">GROWTH</p>
 										<p class="results__numbers-svg">15.5K</p>
 									</div>
+									<svg class="results__accent-bottom">
+										<use href="./images/svg.svg#grow_bottom"></use>
+									</svg>
 								</li>
 								<li class="results__item-svg">
 									<div class="results__border-wrap">
@@ -940,9 +875,7 @@
 										<p class="results__numbers-svg">6,735,525</p>
 									</div>
 								</li>
-								<svg class="results__accent-bottom">
-									<use href="./images/svg.svg#grow_bottom"></use>
-								</svg>
+
 							</ul>
 						</li>
 					</ul>
@@ -1043,9 +976,15 @@
 				<p class="subtitle-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				<ul class="feedback__list">
 					<li class="feedback__list-item feedback__first-none feedback__item-big">
-						<img class="feedback__img"
-							srcset="./images/feedback/feedback1.png 1x, ./images/feedback/feedback1@2.png 2x"
-							src="./images/feedback/feedback1.png" width="320" height="320" alt="">
+						<picture>
+							<source srcset="./images/feedback/feedback-mb.webp 1x, ./images/feedback/feedback-mb@2.webp 2x"
+								media="(max-width:749px)">
+							<source srcset="./images/feedback/feedback-tb.webp 1x, ./images/feedback/feedback-tb@2.webp 2x"
+								media="(max-width:1191px)">
+							<source srcset="./images/feedback/feedback-dk.webp 1x, ./images/feedback/feedback-dk@2.webp 2x"
+								media="(min-width:1192px)">
+							<img class="feedback__img " src="./images/feedback/feedback-mb.webp" alt="sport">
+						</picture>
 						<div class="feedback__item-container feedback__item-container-first">
 							<p class="feedback__item-title">We helped KaseMe Design grow there following by over 50k followers”
 							</p>
@@ -1053,7 +992,26 @@
 							<p class="feedback__item-subtitle">Lorem ipsum dolor sit amet consectetur adip</p>
 						</div>
 					</li>
-					<li class="feedback__list-item feedback__list-item-none feedback__item-big">
+					<li class="feedback__list-item feedback__list-item-second">
+						<picture>
+							<source srcset="./images/feedback/feedback-mb2.webp 1x, ./images/feedback/feedback-mb2@2.webp 2x"
+								media="(max-width:749px)">
+							<source srcset="./images/feedback/feedback-tb2.webp 1x, ./images/feedback/feedback-tb2@2.webp 2x"
+								media="(max-width:1191px)">
+							<source srcset="./images/feedback/feedback-dk2.webp 1x, ./images/feedback/feedback-dk2@2.webp 2x"
+								media="(min-width:1192px)">
+							<img class="feedback__img " src="./images/feedback/feedback-mb2.webp" alt="Guy in vr">
+						</picture>
+						<div class="feedback__item-container feedback__item-container-first">
+							<p class="feedback__item-title">We helped CEEKVR grow there following by over 300k followers” and
+								include
+								some dummy text</p>
+							<p class="feedback__item-name">Artem Zhukov</p>
+							<p class="feedback__item-subtitle">Lorem ipsum dolor sit amet consectetur adip</p>
+						</div>
+					</li>
+
+					<!-- <li class="feedback__list-item feedback__list-item-none feedback__item-big">
 						<img class="feedback__img"
 							srcset="./images/feedback/tablet1.png 1x, ./images/feedback/tablet1@2.png 2x"
 							src="./images/feedback/tablet1.png" width="320" height="320" alt="">
@@ -1075,7 +1033,8 @@
 							<p class="feedback__item-name">Artem Zhukov</p>
 							<p class="feedback__item-subtitle">Lorem ipsum dolor sit amet consectetur adip</p>
 						</div>
-					</li>
+					</li> -->
+
 					<li class="feedback__list-item feedback__list-item-third ">
 						<div class="feedback__box-third">
 							<svg class="feedback__accent" width="64" height="64">
@@ -1305,7 +1264,7 @@
 					<a href="" class="footer__link">Cookie policy</a>
 				</div>
 				<a href="./index.html" class="logo footer__logo">
-					<img src="./images/logo.png" alt="celebrity logo">
+					<img src="./images/logo.webp" alt="celebrity logo">
 					<div class="footer__link-inst">© 2022</div>
 				</a>
 			</div>
@@ -1343,7 +1302,7 @@
 
 	<div class="menu-container js-menu-container" id="mobile-menu">
 		<div class="menu__header">
-			<img src="./images/logo.png" alt="celebrity logo">
+			<img src="./images/logo.webp" alt="celebrity logo">
 			<button class="menu-toggle js-close-menu ">
 				<svg width="24" height="24">
 					<use href="./images/svg.svg#close_menu"></use>
@@ -1428,10 +1387,9 @@
 	<script defer src="js/mobile-menu.js"></script>
 	<script src="./js/modal.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-	<script src="./js/slider.js"></script>
+	<script src="./js/slider-celebrities.js"></script>
 	<script src="./js/slider-results.js"></script>
 	<script src="./js/slider-prizes.js"></script>
-	<script src="./js/slider-delete.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="./js/spoller.js"></script>
 </body>

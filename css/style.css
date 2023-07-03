@@ -381,10 +381,15 @@ body {
   font-weight: 600;
   line-height: 1.2;
 }
+.hero__container-text {
+  padding: 0 16px;
+}
 .hero__img {
-  width: 288px;
-  height: 283px;
   margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .hero__company {
   margin-top: 32px;
@@ -421,23 +426,10 @@ body {
   padding-bottom: 32px;
 }
 .campaigns__img {
-  margin: auto;
-  background-repeat: no-repeat;
-  height: 314px;
   overflow: hidden;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   margin-bottom: 24px;
-}
-.campaigns__img-g {
-  background: url("../images/georgina.jpg");
-  width: 100%;
-  height: 100%;
-}
-.campaigns__img-n {
-  background: url("../images/noah.jpg");
-  width: 100%;
-  height: 100%;
 }
 .campaigns__list {
   display: -webkit-box;
@@ -594,6 +586,9 @@ body {
   background: -o-linear-gradient(top left, #fff 0%, #fff 50%, #f5f0e2 50%, #f5f0e2 100%);
   background: linear-gradient(to bottom right, #fff 0%, #fff 50%, #f5f0e2 50%, #f5f0e2 100%);
 }
+.about__subtitle {
+  padding-top: 32px;
+}
 .about__subtile-text {
   width: 343px;
   margin-bottom: 32px;
@@ -644,6 +639,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 16px;
 }
 .celebrities__list-item {
   height: 425px;
@@ -673,6 +669,10 @@ body {
   opacity: 0.5;
   line-height: 1.5;
 }
+.swiper-slide {
+  width: unset;
+}
+
 /*----------------------------------------------------*/
 .swiper-button {
   display: none;
@@ -835,24 +835,14 @@ body {
   border-radius: 16px;
 }
 .results__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   margin: auto;
-  background-repeat: no-repeat;
-  height: 200px;
   overflow: hidden;
-}
-.results__img-n {
-  background: url("../images/results1.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
-.results__img-g {
-  background: url("../images/results2.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 100%;
 }
 .results__list-svg {
   display: -webkit-box;
@@ -949,41 +939,40 @@ body {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.2;
-  width: 100%;
 }
 .prizes__link {
   display: inline-block;
 }
 .prizes__item-louis {
-  background: url(../images/prizes/prizes1.png);
+  background: url(../images/prizes/prizes1.webp);
   background-repeat: no-repeat;
 }
 .prizes__item-playstation {
-  background: url(../images/prizes/prizes2.png);
+  background: url(../images/prizes/prizes2.webp);
   background-repeat: no-repeat;
 }
 .prizes__item-macbook {
-  background: url(../images/prizes/prizes3.png);
+  background: url(../images/prizes/prizes3.webp);
   background-repeat: no-repeat;
 }
 .prizes__item-iphone {
-  background: url(../images/prizes/prizes4.png);
+  background: url(../images/prizes/prizes4.webp);
   background-repeat: no-repeat;
 }
 .prizes__item-vr {
-  background: url(../images/prizes/prizes5.png);
+  background: url(../images/prizes/prizes5.webp);
   background-repeat: no-repeat;
 }
 .prizes__item-ipad {
-  background: url(../images/prizes/prizes6.png);
+  background: url(../images/prizes/prizes6.webp);
   background-repeat: no-repeat;
 }
 .prizes__item-xbox {
-  background: url(../images/prizes/prizes7.png);
+  background: url(../images/prizes/prizes7.webp);
   background-repeat: no-repeat;
 }
 .prizes__item-gucci {
-  background: url(../images/prizes/prizes8.png);
+  background: url(../images/prizes/prizes8.webp);
   background-repeat: no-repeat;
 }
 .prizes__triangle-bottom {
@@ -1014,14 +1003,11 @@ body {
   margin-bottom: 32px;
 }
 .feedback__img {
-  position: absolute;
-  height: 320px;
   z-index: -1;
 }
 .feedback__list-item {
+  border-radius: 8px;
   margin: 0 auto;
-  width: 320px;
-  height: 320px;
   position: relative;
   color: #ffffff;
 }
@@ -1031,9 +1017,11 @@ body {
   background: linear-gradient(0deg, rgb(2, 0, 36) 3%, rgba(2, 0, 36, 0.1543602507) 100%);
 }
 .feedback__item-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   padding: 0 24px;
-  position: relative;
-  top: 128.56px;
+  z-index: 2;
 }
 .feedback__list-item-big {
   top: 104.56px;
@@ -1072,18 +1060,11 @@ body {
   background: -o-linear-gradient(top left, #f6f9fc 0%, #f6f9fc 50%, #ffffff 50%, #ffffff 100%);
   background: linear-gradient(to bottom right, #f6f9fc 0%, #f6f9fc 50%, #ffffff 50%, #ffffff 100%);
 }
-.feedback__list-item-third {
-  height: 281px;
-}
 .feedback__accent {
   position: absolute;
   top: 6px;
   left: -8px;
 }
-.feedback__list-item-none {
-  display: none;
-}
-
 .slider-list {
   margin-bottom: 24px;
   display: -webkit-box;
@@ -1276,14 +1257,11 @@ body {
 
 /*----------------------------------------------------*/
 @media (max-width: 374px) {
-  .campaigns__img {
-    width: 290px;
-  }
   .campaigns__item {
     max-width: 286px;
   }
-  .feedback__list-item {
-    max-width: 288px;
+  .footer__logo {
+    padding-bottom: 32px;
   }
 }
 @media (min-width: 750px) {
@@ -1299,7 +1277,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .hero {
     overflow: hidden;
@@ -1309,8 +1289,6 @@ body {
   }
   .hero__img {
     margin-left: 0px;
-    width: 476px;
-    height: 468px;
   }
   .hero__list {
     -webkit-box-pack: unset;
@@ -1343,13 +1321,6 @@ body {
     width: 335px;
     margin: 0;
   }
-  .campaigns__img {
-    width: 100%;
-  }
-  .about__img {
-    width: 572px;
-    height: 575px;
-  }
   .celebrities__container {
     max-width: 686px;
   }
@@ -1379,11 +1350,9 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    max-width: 686px;
     margin: 0 auto;
   }
   .results__list-item {
-    margin-right: 0 !important;
     width: 335px;
   }
   .prizes__list-none {
@@ -1411,11 +1380,11 @@ body {
     display: flex;
   }
   .prizes__item-louis {
-    background: url(../images/prizes/prizes1-tablet.png);
+    background: url(../images/prizes/prizes1-tablet.webp);
     max-width: 335px;
   }
   .prizes__item-playstation {
-    background: url(../images/prizes/prizes2-tablet.png);
+    background: url(../images/prizes/prizes2-tablet.webp);
     max-width: 335px;
   }
   .prizes__link-img {
@@ -1430,26 +1399,16 @@ body {
   .prizes__list-none2 {
     display: none;
   }
-  .feedback__list-item-none {
-    display: block;
-  }
-  .feedback__first-none {
-    display: none;
-  }
   .feedback__list-item {
     border-radius: 8px;
     overflow: hidden;
-    width: 335px;
-    height: 248px;
   }
   .feedback__list-item-big {
     top: 32.88px;
   }
   .feedback__item-container-first {
-    top: 400px;
-  }
-  .feedback__list-item-third {
-    height: 329px;
+    bottom: 0;
+    left: 0;
   }
   .feedback__box-third {
     padding: 24px;
@@ -1460,9 +1419,6 @@ body {
     left: 13px;
   }
   .feedback__img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -1512,16 +1468,6 @@ body {
         -ms-flex-order: 3;
             order: 3;
     max-width: none;
-  }
-}
-@media (max-width: 749px) {
-  .prizes__list-item {
-    width: 260px !important;
-  }
-}
-@media (min-width: 1069px) {
-  .feedback__item-container-first {
-    top: 160px;
   }
 }
 @media (max-width: 1191px) {
@@ -1665,8 +1611,7 @@ body {
             align-items: center;
   }
   .hero__img {
-    width: 733px;
-    height: 591px;
+    margin-top: -100px;
   }
   .hero__company {
     margin-top: 0;
@@ -1691,31 +1636,17 @@ body {
     max-width: 572px;
     width: unset;
   }
-  .campaigns__img {
-    margin: auto;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 320px;
-    overflow: hidden;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    margin-bottom: 24px;
-  }
-  .campaigns__img-g {
-    background: url("../images/georgina-desktop.jpg");
-    width: 100%;
-    height: 100%;
-  }
-  .campaigns__img-n {
-    background: url("../images/noah-desktop.jpg");
-    width: 100%;
-    height: 100%;
-  }
   .subtitle {
     font-size: 48px;
   }
   .subtitle-text {
     font-size: 25px;
+  }
+  .about__subtitle {
+    padding-top: 115.5px;
+  }
+  .about__subtile-text {
+    margin-bottom: 64px;
   }
   .about__triangle-top {
     height: 120px;
@@ -1742,15 +1673,10 @@ body {
     gap: 32px;
   }
   .about__img {
-    -webkit-box-flex: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2;
+    max-width: 572px;
   }
   .about__list {
     gap: 64px;
-  }
-  .celebrities__list-item {
-    width: 278px !important;
   }
   .swiper-button {
     display: -webkit-box;
@@ -1815,11 +1741,7 @@ body {
   .results__subtitle-text {
     margin-bottom: unset;
   }
-  .results__img-n {
-    overflow: hidden;
-  }
   .results__img {
-    height: 350px;
     border-top-left-radius: 27px;
     border-top-right-radius: 27px;
   }
@@ -1835,8 +1757,7 @@ body {
     border-radius: 27px;
     -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15), 0px 7px 15px 0px rgba(0, 0, 0, 0.15), -2px 28px 28px 0px rgba(0, 0, 0, 0.13), -4px 63px 38px 0px rgba(0, 0, 0, 0.08), -8px 111px 45px 0px rgba(0, 0, 0, 0.02), -12px 174px 49px 0px rgba(0, 0, 0, 0);
             box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15), 0px 7px 15px 0px rgba(0, 0, 0, 0.15), -2px 28px 28px 0px rgba(0, 0, 0, 0.13), -4px 63px 38px 0px rgba(0, 0, 0, 0.08), -8px 111px 45px 0px rgba(0, 0, 0, 0.02), -12px 174px 49px 0px rgba(0, 0, 0, 0);
-    width: 572px !important;
-    max-width: 572px;
+    width: 572px;
   }
   .results__list-svg {
     -webkit-box-pack: center;
@@ -1857,12 +1778,12 @@ body {
     border-radius: 20px;
   }
   .prizes__item-louis {
-    background: url(../images/prizes/prizes1.png);
+    background: url(../images/prizes/prizes1.webp);
     background-repeat: no-repeat;
     background-size: contain;
   }
   .prizes__item-playstation {
-    background: url(../images/prizes/prizes2.png);
+    background: url(../images/prizes/prizes2.webp);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -1871,32 +1792,32 @@ body {
     border-radius: 20px;
   }
   .prizes__item-macbook {
-    background: url(../images/prizes/prizes3.png);
+    background: url(../images/prizes/prizes3.webp);
     background-repeat: no-repeat;
     background-size: contain;
   }
   .prizes__item-iphone {
-    background: url(../images/prizes/prizes4.png);
+    background: url(../images/prizes/prizes4.webp);
     background-repeat: no-repeat;
     background-size: contain;
   }
   .prizes__item-vr {
-    background: url(../images/prizes/prizes5.png);
+    background: url(../images/prizes/prizes5.webp);
     background-repeat: no-repeat;
     background-size: contain;
   }
   .prizes__item-ipad {
-    background: url(../images/prizes/prizes6.png);
+    background: url(../images/prizes/prizes6.webp);
     background-repeat: no-repeat;
     background-size: contain;
   }
   .prizes__item-xbox {
-    background: url(../images/prizes/prizes7.png);
+    background: url(../images/prizes/prizes7.webp);
     background-repeat: no-repeat;
     background-size: contain;
   }
   .prizes__item-gucci {
-    background: url(../images/prizes/prizes8.png);
+    background: url(../images/prizes/prizes8.webp);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -1906,21 +1827,6 @@ body {
   .feedback__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(572px, 1fr));
-  }
-  .feedback__list-item {
-    width: 572px;
-  }
-  .feedback__list-item-second {
-    height: 308px;
-  }
-  .feedback__list-item-none {
-    display: none;
-  }
-  .feedback__first-none {
-    display: block;
-  }
-  .feedback__item-container-first {
-    top: 482px;
   }
   .feedback__list-item-big {
     top: 140px;
@@ -2031,51 +1937,43 @@ body {
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
-  .results__img-n {
-    background: url("../images/results1@2.jpg");
-    background-size: cover;
-  }
-  .results__img-g {
-    background: url("../images/results2@2.jpg");
-    background-size: cover;
-  }
   .prizes__item-louis {
-    background: url(../images/prizes/prizes1@2.png);
+    background: url(../images/prizes/prizes1@2.webp);
     background-repeat: no-repeat;
     background-size: contain;
   }
   .prizes__item-playstation {
-    background: url(../images/prizes/prizes2@2.png);
+    background: url(../images/prizes/prizes2@2.webp);
     background-repeat: no-repeat;
     background-size: contain;
   }
   .prizes__item-macbook {
-    background: url(../images/prizes/prizes3@2.png);
+    background: url(../images/prizes/prizes3@2.webp);
     background-repeat: no-repeat;
     background-size: contain;
   }
   .prizes__item-iphone {
-    background: url(../images/prizes/prizes4@2.png);
+    background: url(../images/prizes/prizes4@2.webp);
     background-repeat: no-repeat;
     background-size: contain;
   }
   .prizes__item-vr {
-    background: url(../images/prizes/prizes5@2.png);
+    background: url(../images/prizes/prizes5@2.webp);
     background-repeat: no-repeat;
     background-size: contain;
   }
   .prizes__item-ipad {
-    background: url(../images/prizes/prizes6@2.png);
+    background: url(../images/prizes/prizes6@2.webp);
     background-repeat: no-repeat;
     background-size: contain;
   }
   .prizes__item-xbox {
-    background: url(../images/prizes/prizes7@2.png);
+    background: url(../images/prizes/prizes7@2.webp);
     background-repeat: no-repeat;
     background-size: contain;
   }
   .prizes__item-gucci {
-    background: url(../images/prizes/prizes8@2.png);
+    background: url(../images/prizes/prizes8@2.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-size: contain;
@@ -2083,33 +1981,13 @@ body {
 }
 @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 750px) and (max-width: 1191px), (-o-min-device-pixel-ratio: 2/1) and (min-width: 750px) and (max-width: 1191px), (min-resolution: 192dpi) and (min-width: 750px) and (max-width: 1191px) {
   .prizes__item-louis {
-    background: url(../images/prizes/prizes1@2-tablet.png);
+    background: url(../images/prizes/prizes1@2-tablet.webp);
     background-repeat: no-repeat;
     background-size: contain;
   }
   .prizes__item-playstation {
-    background: url(../images/prizes/prizes2@2-tablet.png);
+    background: url(../images/prizes/prizes2@2-tablet.webp);
     background-repeat: no-repeat;
     background-size: contain;
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1158px), (-o-min-device-pixel-ratio: 2/1) and (min-width: 1158px), (min-resolution: 192dpi) and (min-width: 1158px) {
-  .campaigns__img-g {
-    background: url("../images/georgina-desktop@2.jpg");
-    background-size: cover;
-  }
-  .campaigns__img-n {
-    background: url("../images/noah-desktop@2.jpg");
-    background-size: cover;
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 1191px), (-o-min-device-pixel-ratio: 2/1) and (max-width: 1191px), (min-resolution: 192dpi) and (max-width: 1191px) {
-  .campaigns__img-g {
-    background: url("../images/georgina@2.jpg");
-    background-size: cover;
-  }
-  .campaigns__img-n {
-    background: url("../images/noah@2.jpg");
-    background-size: cover;
   }
 }
